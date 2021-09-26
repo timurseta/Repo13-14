@@ -1,0 +1,16 @@
+img {
+    width: 200px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.row {
+    max-width: max-content;
+    margin: auto;
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
