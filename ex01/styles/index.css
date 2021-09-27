@@ -1,16 +1,92 @@
-img {
-    width: 200px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 6px;
-    margin-right: 6px;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
 .row {
-    max-width: max-content;
-    margin: auto;
-    display: flex;
+  width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
 }
+
 .column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.row .image { 
+  position: relative;  
+   float: left; 
+  
+}
+
+
+img {
+  width: 200px;
+}
+.black {
+  width: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  text-align: center;
+  color: white;
+}
+.image:hover .black {
+    visibility: visible;  
+    
+}
+
+.black h1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.modal {
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ top: 0;
+ background: white;
+ visibility: hidden;
+ max-width: 1080px;
+
+}
+
+.modalDiv {
+height: auto;
+margin: 0 auto;
+}
+
+.close {
+width: 100px;
+height: 40px;
+color: white;
+background: black;
+border-radius: 25%;
+}
+
+.on {
+visibility: visible;
+}
+
+.off {
+visibility: hidden;
+}
+
+iframe { display: block; }
+
+.content h1, p {
+text-align: center;
+font-size: smaller;
+font-weight:lighter;
 }
